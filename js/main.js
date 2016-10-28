@@ -7,13 +7,12 @@ function nombre() {
 			alert ("Ingrese nombre");
 			return false;
 		}else if (nombre.substring(0,1) !== nombre.substring(0,1).toUpperCase()){
-			alert("ingrese nombre con mayúscula.");
+			alert("Ingrese nombre con mayúscula.");
 			return false;
 		}else if (/[0-9]/.test(nombre)) {
 			alert("Ingrese solo letras.");
 			return false;
 		}else {
-			alert("nombre se ah registrado con exito.");
 			return true;
 		}
 	}
@@ -27,13 +26,12 @@ function apellido() {
 			alert ("Ingrese Apellido");
 			return false;
 		}else if (apellido.substring(0,1) !== apellido.substring(0,1).toUpperCase()){
-			alert("ingrese apellido con mayúscula.");
+			alert("Ingrese apellido con mayúscula.");
 			return false;
 		}else if (/[0-9]/.test(apellido)) {
 			alert("Ingrese solo letras.");
 			return false;
 		}else {
-			alert("Apellido se ah registrado con exito.");
 			return true;
 		}
 	}
@@ -44,10 +42,9 @@ function validaremail(){
 	var email = document.getElementById('input-email').value;
 	var verificacion = /[a-zA-Z0-9_-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
 	if (verificacion.exec(email)===null) {
-		alert("La dirección de email es incorrecta.");
+		alert("Ingrese un correo valido.");
 		return false;
 	} else {
-		alert("La dirección de email es correcta.");
 		return true;
 	}
 } 
@@ -63,7 +60,6 @@ function contraseña() {
 			return false;
 		}
 		else {
-			alert ("contraseña correcta");
 			return true;
 		}
 	}
